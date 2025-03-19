@@ -1,0 +1,35 @@
+.container {
+    width: 23.43rem;
+    max-width: 20.93rem;
+    margin-inline: auto;
+}
+
+.desktop-only {
+    display: none;
+}
+
+
+
+.button {
+    width: 5.56rem;
+    height: 2.5rem;
+    padding: .75rem 1.25rem;
+    border-radius: .5rem;
+
+    background-color: var(--pink-dark);
+}
+
+
+
+@media (width >= 80em) {
+    .container {
+        width: 90rem;
+        max-width: 70rem;
+        margin-inline: auto;
+    }
+
+    .desktop-only {
+        display: initial;
+    }
+
+}
