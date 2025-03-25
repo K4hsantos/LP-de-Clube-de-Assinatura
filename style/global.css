@@ -38,7 +38,7 @@
     --title-sm: 700 1rem var(--font-family);
     --title-xs: 700 .5rem var(--font-family);
 
-    --subtitle: 500 2rem/200% var(--font-family);
+    --subtitle: 500 1rem/200% var(--font-family);
 
     --body-lg: 600 .625rem/140% var(--font-family);
     --body-md: 600 .5rem/140% var(--font-family);
