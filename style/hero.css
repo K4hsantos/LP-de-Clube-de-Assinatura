@@ -42,6 +42,7 @@
 #hero-text {
     position: relative;
     margin-top: 7.100rem;
+    margin-bottom: 10rem;
 
     & p {
         text-align: center;
@@ -126,7 +127,7 @@
 
     #hero-text {
         margin-top: 13.125rem;
-        margin-bottom: 13.125rem;
+        margin-bottom: 40rem;
 
 
         & p {
@@ -183,33 +184,33 @@
                 transform: scale(1);
             }
     
-            p:nth-child(1) {
+            & p:nth-child(1) {
                 transition: 500ms;
                 opacity: 1;
             }
 
-            p:nth-child(2) {
+            & p:nth-child(2) {
                 transition: 500ms;
                 transition-delay: 900ms;
                 opacity: 1;
             }
 
-            p:nth-child(3) {
+            & p:nth-child(3) {
                 transition: 500ms;
                 transition-delay: 1.5s;
                 opacity: 1;
             }
 
 
-            span:nth-child(1) {
+            & span:nth-child(1) {
                 color: var(--blue-light);
             }
 
-            span:nth-child(2) {
+            & span:nth-child(2) {
                 color: var(--blue-light);
             }
 
-            span:nth-child(3) {
+            & span:nth-child(3) {
                 color: var(--blue-light);
             }
         }

@@ -1,0 +1,23 @@
+#kit {
+
+    & .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img[src*="Vector"] {
+            width: 2rem;
+        }
+
+    }
+
+    & span {
+        margin-top: .5rem;
+        display: flex;
+        justify-content: center;
+
+        font: .875rem var(--body-md);
+        color: var(--text-body);
+        
+    }
+}
