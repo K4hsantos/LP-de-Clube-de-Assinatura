@@ -13,6 +13,7 @@
 
     & span {
         margin-top: .5rem;
+        margin-bottom: 5rem;
         display: flex;
         justify-content: center;
 
@@ -20,4 +21,131 @@
         color: var(--text-body);
         
     }
+}
+
+@media (width >= 80em) {
+    #kit {
+        position: relative;
+
+        & .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            & img[src*="Vector"] {
+                width: 5rem;
+            }
+    
+        }
+
+        
+    & span {
+        margin-top: .5rem;
+        margin-bottom: 15rem;
+        display: flex;
+        justify-content: center;
+
+        font: .875rem var(--body-md);
+        color: var(--text-body);
+        
+    }
+
+    & .book {
+        position: relative;
+
+        & img:nth-child(1) {
+            display: block;
+            margin: auto;
+            width: 28.16rem;
+        }
+
+        & img:nth-child(2) {
+            position: absolute;
+
+            bottom: 36.8rem;
+            left: 16rem;
+
+        }
+
+        & img:nth-child(3) {
+            position: absolute;
+
+            left: 14rem;
+            bottom: 6.5rem;
+        }
+
+        & img:nth-child(4) {
+            position: absolute;
+
+            width: 13.87rem;
+            left: 17rem;
+            top: 27.7rem;
+            rotate: -10deg;
+            z-index: -1;
+        }
+
+        & img:nth-child(5) {
+            position: absolute;
+            width: 10.75rem;
+            height: 33.62rem;
+
+            bottom: 8rem;
+            left: 50rem;
+            rotate: 12deg;
+            z-index: -1;
+        }
+
+        & img:nth-child(6) {
+            position: absolute;
+            width: 10.75rem;
+            height: 33.62rem;
+
+            top: 1rem;
+            left: 56rem;
+            rotate: 23deg;
+            z-index: -2;
+        }
+        
+        & img:nth-child(7) {
+            position: absolute;
+
+            top: 33.5rem;
+            left: 53.5rem;
+
+        }
+
+
+        & p:nth-of-type(1) {
+            position: absolute;
+
+            font: var(--body-md);
+            color: var(--text-body);
+            bottom: 41rem;
+            left: 11.5rem;
+        }
+
+        & p:nth-of-type(2) {
+            position: absolute;
+
+            font: var(--body-md);
+            color: var(--text-body);
+            bottom: 16rem;
+            left: 12.5rem;
+        }
+
+
+        & p:nth-of-type(3) {
+            position: absolute;
+
+            font: var(--body-md);
+            color: var(--text-body);
+
+            top: 44rem;
+            left: 48rem;
+        }
+
+    
+        }
+    }
+
 }
