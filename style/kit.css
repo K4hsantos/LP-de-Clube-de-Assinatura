@@ -53,6 +53,11 @@
     & .book {
         position: relative;
 
+        width: 80rem; 
+        max-width: 85%; 
+        margin: 0 auto;
+        min-height: 40rem;
+
         & img:nth-child(1) {
             display: block;
             margin: auto;
@@ -62,35 +67,34 @@
         & img:nth-child(2) {
             position: absolute;
 
-            bottom: 36.8rem;
-            left: 16rem;
+            bottom: 100%;
+            left: 15%;
 
         }
 
         & img:nth-child(3) {
             position: absolute;
 
-            left: 14rem;
-            bottom: 6.5rem;
+            left: 12%;
+            bottom: 26%;
         }
 
         & img:nth-child(4) {
             position: absolute;
 
             width: 13.87rem;
-            left: 17rem;
-            top: 27.7rem;
+            left: 17%;
+            top: 67%;
             rotate: -10deg;
             z-index: -1;
         }
 
         & img:nth-child(5) {
             position: absolute;
-            width: 10.75rem;
             height: 33.62rem;
 
-            bottom: 8rem;
-            left: 50rem;
+            bottom: 27%;
+            left: 64%;
             rotate: 12deg;
             z-index: -1;
         }
@@ -100,17 +104,17 @@
             width: 10.75rem;
             height: 33.62rem;
 
-            top: 1rem;
-            left: 56rem;
-            rotate: 23deg;
+            top: 4%;
+            left: 75%;
+            rotate: 21deg;
             z-index: -2;
         }
         
         & img:nth-child(7) {
             position: absolute;
 
-            top: 33.5rem;
-            left: 53.5rem;
+            top: 84%;
+            left: 72%;
 
         }
 
@@ -120,8 +124,8 @@
 
             font: var(--body-md);
             color: var(--text-body);
-            bottom: 41rem;
-            left: 11.5rem;
+            bottom: 108%;
+            left: 7%;
         }
 
         & p:nth-of-type(2) {
@@ -129,8 +133,8 @@
 
             font: var(--body-md);
             color: var(--text-body);
-            bottom: 16rem;
-            left: 12.5rem;
+            bottom: 49%;
+            left: 10%;
         }
 
 
@@ -140,12 +144,124 @@
             font: var(--body-md);
             color: var(--text-body);
 
-            top: 44rem;
-            left: 48rem;
+            top: 110%;
+            left: 64%;
         }
 
     
         }
     }
 
+}
+
+@media (width >= 90em) {
+    #kit {
+        & .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            & img[src*="Vector"] {
+                width: 5rem;
+            }
+    
+        }
+
+        
+    & span {
+        margin-top: .5rem;
+        margin-bottom: 15rem;
+        display: flex;
+        justify-content: center;
+
+        font: .875rem var(--body-md);
+        color: var(--text-body);
+        
+    }
+
+    & .book {
+        position: relative;
+        width: 80rem; 
+        max-width: 85%; 
+        margin: 0 auto;
+        min-height: 40rem;
+
+        & img:nth-child(1) {
+            display: block;
+            margin: auto;
+            width: 28.16rem;
+        }
+    
+        & img:nth-child(2) {
+            position: absolute;
+            width: 10%;
+            top: -2%;
+            left: 25%;
+        }
+    
+        & img:nth-child(3) {
+            position: absolute;
+            left: 18%;
+            bottom: 26%;
+        }
+    
+        & img:nth-child(4) {
+            position: absolute;
+            left: 22%;
+            top: 67%;
+            rotate: -10deg;
+            z-index: -1;
+        }
+    
+        & img:nth-child(5) {
+            position: absolute;
+            height: 33.62rem;
+
+            bottom: 28%;
+            left: 62%;
+            rotate: 9deg;
+            z-index: -1;
+        }
+    
+        & img:nth-child(6) {
+            position: absolute;
+            width: 13%;
+            top: 4%;
+            left: 72%;
+            rotate: 23deg;
+            z-index: -2;
+        }
+        
+        & img:nth-child(7) {
+            position: absolute;
+            width: 10%;
+            top: 83%;
+            left: 69%;
+        }
+    
+        & p:nth-of-type(1) {
+            position: absolute;
+            font: var(--body-md);
+            color: var(--text-body);
+            bottom: 105%;
+            left: 20%;
+        }
+    
+        & p:nth-of-type(2) {
+            position: absolute;
+            font: var(--body-md);
+            color: var(--text-body);
+            bottom: 49%;
+            left: 17%;
+        }
+    
+        & p:nth-of-type(3) {
+            position: absolute;
+            font: var(--body-md);
+            color: var(--text-body);
+            top: 105%;
+            left: 62%;
+        }
+    }
+}
 }
