@@ -28,8 +28,13 @@
     max-width: 18rem;
     height: 25rem;
 
-    background-color: var(--shape-stroke);
+    background-color: var(--shape-base);
     border-radius: 20px;
+}
+
+.flex {
+    display: flex;
+    gap: 3rem;
 }
 
 

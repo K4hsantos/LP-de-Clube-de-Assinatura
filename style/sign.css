@@ -1,22 +1,43 @@
 #sign {
+    
+    position: relative;
     margin-top: 13rem;
+
+    
+    &::before {
+        content: '';
+        position: absolute;
+        width: 50rem;
+        height: 50rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--shape-base);
+        filter: blur(350px);
+        border-radius: 50%;
+        z-index: -1;
+        pointer-events: none;
+    }
 
     & .subscription {
     text-align: center;
-    }
+    
 
     & h2 {
         font: var(--title-lg);
     }
 
+    }
+   
     & .card {
         padding: 2rem;
         margin-top: 4rem;
-    
+        border: 1.5px solid var(--shape-stroke);
 
     & h3 {
         color: var(--blue-light);
         font: var(--title-xs);
+        font-size: 1rem;
     }
 
     & pricing {
@@ -31,8 +52,6 @@
         position: relative;
         font: var(--title-xs);
         font-size: 1rem;
-
-        left: -8px;
     }
 
     & p {
@@ -40,7 +59,7 @@
         color: var(--text-label);
         margin-top: 0.5rem;
         opacity: 0.5;
-        margin-bottom: 5.78rem;
+        margin-bottom: 4.5rem;
     }
 
     & li {
@@ -65,10 +84,62 @@
         text-align: center;
         background-color: var(--blue-dark);
     }
+}
+
+    & .flex .card:nth-child(2) {
+        position: relative;
+        background-color: var(--shape-hover);
 
 
+            & h3 {
+                color: var(--blue-light);
+                font: var(--title-xs);
+                font-size: 1rem;
+            }
+    
+            & span {
+                position: absolute;
+
+                background-color: var(--shape-stroke);
+                width: 5.5rem;
+                height: 2.2rem;
+                border-radius: 2rem;
+
+                font: 600 10px var(--font-family);
+                letter-spacing: 5%;
+                color: var(--text-body);
+
+                top: 6%;
+                left: 55%;
+            }
+
+            & pricing small {
+                position: absolute;
+
+                top: 25%;
+                font: var(--title-xs);
+                font-size: 1rem;
+            }
+
+        & p {
+            margin-bottom: 3rem;
+        }
+
+        & a {
+            background-color: var(--pink-dark);
+        }
+
+        & li {
+            background: url(../assets/Vector.png) no-repeat;
+            background-position: -13px;
+            background-size: 2.5rem;
+        }
     }
 
+    & .flex .card:nth-child(3) {
 
-
+        & p {
+            margin-bottom: 1.5rem;
+        }
+    }
 }

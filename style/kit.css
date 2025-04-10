@@ -128,10 +128,10 @@
             position: absolute;
             width: 50rem;
             height: 50rem;
-            top: 50%;
+            top: 70%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: rgba(128, 0, 128, 0.5);
+            background: var(--pink-dark);
             filter: blur(350px);
             border-radius: 50%;
             z-index: -1;

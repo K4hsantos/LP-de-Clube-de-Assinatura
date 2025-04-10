@@ -44,22 +44,6 @@
     margin-top: 7.100rem;
     margin-bottom: 10rem;
 
-    &::before {
-        content: '';
-        position: absolute;
-        width: 40rem;
-        height: 40rem;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgba(128, 0, 128, 0.5);
-        filter: blur(350px);
-        border-radius: 50%;
-        z-index: -1;
-        pointer-events: none;
-    }
-
-
     & p {
         
         text-align: center;

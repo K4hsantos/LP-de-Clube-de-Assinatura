@@ -47,6 +47,21 @@
 
 }
 
+.card-wrapper {
+    display: flex;
+    gap: 1.5rem; /* espaço entre os cards */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* opcional: pra "grudar" no card certinho */
+    -webkit-overflow-scrolling: touch; /* rolagem suave em iOS */
+    padding-bottom: 1rem;
+  }
+
+  .card {
+    flex: 0 0 auto; /* impede o card de encolher */
+    scroll-snap-align: start; /* opcional */
+    min-width: 85%; /* ajusta o tamanho visível do card */
+  }
+  
 body {
     overflow-x: hidden;
     background-color: var(--shape-background);
