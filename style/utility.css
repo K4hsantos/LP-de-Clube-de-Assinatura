@@ -23,6 +23,15 @@
 }
 
 
+.card {
+
+    max-width: 18rem;
+    height: 25rem;
+
+    background-color: var(--shape-stroke);
+    border-radius: 20px;
+}
+
 
 @media (width >= 80em) {
     .container {

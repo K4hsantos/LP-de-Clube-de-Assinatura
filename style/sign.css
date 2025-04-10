@@ -1,0 +1,74 @@
+#sign {
+    margin-top: 13rem;
+
+    & .subscription {
+    text-align: center;
+    }
+
+    & h2 {
+        font: var(--title-lg);
+    }
+
+    & .card {
+        padding: 2rem;
+        margin-top: 4rem;
+    
+
+    & h3 {
+        color: var(--blue-light);
+        font: var(--title-xs);
+    }
+
+    & pricing {
+        display: block;
+        margin-top: 1.5rem;
+
+        font: var(--title-md);
+        color: var(--text-title);
+    }
+
+    & pricing small {
+        position: relative;
+        font: var(--title-xs);
+        font-size: 1rem;
+
+        left: -8px;
+    }
+
+    & p {
+        font: var(--body-sm);
+        color: var(--text-label);
+        margin-top: 0.5rem;
+        opacity: 0.5;
+        margin-bottom: 5.78rem;
+    }
+
+    & li {
+        
+        font: var(--title-xs);
+        color: var(--text-body);
+        margin-top: .75rem;
+
+        background: url(../assets/icons/Vector-blue.svg) no-repeat;
+        background-position: -13px;
+        background-size: 2.5rem;
+        
+        padding-left: 1.5rem;
+
+    }
+
+    & a {
+        display: block;
+        width: 13rem;
+        margin-top: 2rem;
+
+        text-align: center;
+        background-color: var(--blue-dark);
+    }
+
+
+    }
+
+
+
+}

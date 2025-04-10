@@ -34,15 +34,15 @@
     --font-family: 'Raleway', sans-serif;
 
     --title-lg: 700 1.5rem var(--font-family);
-    --title-md: 700 1.25rem var(--font-family);
+    --title-md: 700 2.5rem var(--font-family);
     --title-sm: 700 1rem var(--font-family);
-    --title-xs: 700 .5rem var(--font-family);
+    --title-xs: 700 .75rem var(--font-family);
 
     --subtitle: 500 1rem/200% var(--font-family);
 
     --body-lg: 600 .625rem/140% var(--font-family);
     --body-md: 600 .5rem/140% var(--font-family);
-    --body-sm: 600 .437rem/140% var(--font-family);
+    --body-sm: 600 .875rem/140% var(--font-family);
     --body-xs: 600 .375rem/140% var(--font-family);
 
 }
@@ -67,7 +67,9 @@ a {
     color: white;
 }
 
-
+ul[role="list"]{
+    list-style: none;
+}
 
 @media (width >= 80em) {
     :root {

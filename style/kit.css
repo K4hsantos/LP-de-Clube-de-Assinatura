@@ -5,6 +5,10 @@
         justify-content: center;
         align-items: center;
 
+        & h2 {
+            font: var(--title-lg);
+        }
+
         & img[src*="Vector"] {
             width: 2rem;
         }
