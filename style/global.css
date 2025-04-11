@@ -44,22 +44,22 @@
     --body-md: 600 .5rem/140% var(--font-family);
     --body-sm: 600 .875rem/140% var(--font-family);
     --body-xs: 600 .375rem/140% var(--font-family);
+    --button: 700 .875rem var(--font-family);
 
 }
 
 .card-wrapper {
     display: flex;
-    gap: 1.5rem; /* espaço entre os cards */
+    gap: 1.5rem; 
     overflow-x: auto;
-    scroll-snap-type: x mandatory; /* opcional: pra "grudar" no card certinho */
-    -webkit-overflow-scrolling: touch; /* rolagem suave em iOS */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
     padding-bottom: 1rem;
   }
 
   .card {
-    flex: 0 0 auto; /* impede o card de encolher */
-    scroll-snap-align: start; /* opcional */
-    min-width: 85%; /* ajusta o tamanho visível do card */
+    flex: 0 0 auto;
+    scroll-snap-align: start;''
   }
   
 body {

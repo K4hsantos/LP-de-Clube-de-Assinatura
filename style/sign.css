@@ -78,7 +78,7 @@
 
     & a {
         display: block;
-        width: 13rem;
+        width: 14rem;
         margin-top: 2rem;
 
         text-align: center;
@@ -89,7 +89,6 @@
     & .flex .card:nth-child(2) {
         position: relative;
         background-color: var(--shape-hover);
-
 
             & h3 {
                 color: var(--blue-light);
@@ -110,7 +109,7 @@
                 color: var(--text-body);
 
                 top: 6%;
-                left: 55%;
+                left: 60%;
             }
 
             & pricing small {
@@ -142,4 +141,247 @@
             margin-bottom: 1.5rem;
         }
     }
+}
+
+
+@media (width >= 80em) {
+
+    #sign {
+        position: relative;
+        margin-top: 25rem;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            width: 50rem;
+            height: 50rem;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--shape-base);
+            filter: blur(350px);
+            border-radius: 50%;
+            z-index: -1;
+            pointer-events: none;
+        }
+    
+        & .subscription {
+        text-align: center;
+        
+    
+        & h2 {
+            font: var(--title-lg);
+            
+            margin-bottom: 13rem;
+        }
+    
+        }
+       
+        & .card {
+            position: absolute;
+
+            padding: 2rem;
+            margin-top: 10rem;
+            border: 1.5px solid var(--shape-stroke);
+            width: 18rem;
+            height: 26rem;
+
+            top: 95%;
+            left: 11%;
+            rotate: -10deg;
+            z-index: -1;
+            
+            transition: transform 800ms ease, background-color 500ms ease-in-out;
+
+            & img[src*='Vector'] {
+                    position: absolute;
+                    bottom: 94%;
+                    left: -22%;
+                    rotate: -5deg;
+
+                    transition: transform 0.6s ease;
+            }
+        
+            & img[src*='Vector']:nth-child(2) {
+                    position: absolute;
+                    width: 3rem;
+    
+                    bottom: 92%;
+                    left: -22%;
+                    rotate: -5deg;
+            }
+            
+
+        & h3 {
+            color: var(--blue-light);
+            font: var(--title-xs);
+            font-size: 1rem;
+        }
+    
+        & pricing {
+            display: block;
+            margin-top: 1.5rem;
+    
+            font: var(--title-md);
+            color: var(--text-title);
+        }
+    
+        & pricing small {
+            position: relative;
+            font: var(--title-xs);
+            font-size: 1rem;
+        }
+    
+        & p {
+            font: var(--body-sm);
+            color: var(--text-label);
+            margin-top: 0.5rem;
+            opacity: 0.5;
+            margin-bottom: 5.5rem;
+        }
+    
+        & li {
+            font: var(--body-xs);
+            color: var(--text-body);
+            margin-top: .75rem;
+    
+            background: url(../assets/icons/Vector-blue.svg) no-repeat;
+            background-position: -13px;
+            background-size: 2.5rem;
+            
+            
+        }
+    
+        & a {
+            display: block;
+            width: 14rem;
+            margin-top: 2rem;
+    
+            text-align: center;
+            background-color: var(--blue-dark);
+        }
+
+        &:hover {
+            transform: scale(1.03);
+            background-color: var(--shape-hover);
+            box-shadow: 0 0 100px rgba(57, 59, 154, 0.2);
+            z-index: 1;
+
+            & img[src*='Vector'] {
+                transform: rotate(-20deg);
+            }
+
+            & img:nth-child(2) {
+                transform: rotate(20deg);
+            }
+          }
+    }
+    
+        & .flex .card:nth-child(2) {
+            background-color: var(--shape-hover);
+            position: absolute;
+
+            top: 60%;
+            left: 37%;
+            rotate: 0deg;
+            }
+
+                & img[src*='Bunny'] {
+                    position: absolute;
+                    bottom: 100%;
+                }
+
+                & h3 {
+                    color: var(--blue-light);
+                    font: var(--title-xs);
+                    font-size: 1rem;
+                }
+        
+                & span {
+                    position: absolute;
+    
+                    background-color: var(--shape-stroke);
+                    width: 5.5rem;
+                    height: 2.2rem;
+                    border-radius: 2rem;
+    
+                    font: 600 10px var(--font-family);
+                    letter-spacing: 5%;
+                    color: var(--text-body);
+    
+                    top: 6%;
+                    left: 58%; 
+                }
+    
+                & pricing small {
+                    position: absolute;
+    
+                    top: 25%;
+                    font: var(--title-xs);
+                    font-size: 1rem;
+                }
+    
+            & p {
+                margin-bottom: 3.8rem;
+            }
+    
+            & a {
+                background-color: var(--pink-dark);
+            }
+    
+            & li {
+                background: url(../assets/Vector.png) no-repeat;
+                background-position: -13px;
+                background-size: 2.5rem;
+
+                font: var(--body-xs);
+            }
+
+            & .flex .card:nth-child(3) {
+
+                top: 93.5%;
+                left: 63%;
+                rotate: 10deg;
+                z-index: -2;
+
+                & img[src*='Vector'] {
+                    position: absolute;
+                    top: 92%;
+                    left: 100%;
+                    rotate: -5deg;
+
+                    transition: transform 0.6s ease;
+            }
+
+                & img[src*='Vector']:nth-child(2) {
+                    position: absolute;
+                    top: 100%;
+                    left: 91%;
+                    rotate: -5deg;
+
+                    transition: transform 0.6s ease;
+            }
+                
+                & p {
+                    margin-bottom: 2.2rem;
+                }
+                
+
+
+                &:hover {
+                    transform: scale(1.03);
+                    background-color: var(--shape-hover);
+                    box-shadow: 0 0 100px rgba(57, 59, 154, 0.2);
+                    z-index: 1;
+
+                    & img[src*='Vector'] {
+                        transform: rotate(20deg);
+                    }
+        
+                    & img:nth-child(2) {
+                        transform: rotate(-20deg);
+                    }
+                  }
+            }
+        } 
 }

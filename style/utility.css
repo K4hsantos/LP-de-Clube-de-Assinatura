@@ -20,6 +20,8 @@
     border-radius: .5rem;
 
     background-color: var(--pink-dark);
+
+    font: var(--button);
 }
 
 
@@ -51,5 +53,14 @@
 
     .mobile-only {
         display: none;
+    }
+
+    .card {
+
+    max-width: 18rem;
+    height: 25rem;
+
+    background-color: var(--shape-base);
+    border-radius: 20px;
     }
 }
