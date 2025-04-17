@@ -48,7 +48,7 @@
 
 }
 
-.card-wrapper {
+#sign .card-wrapper {
     display: flex;
     gap: 1.5rem; 
     overflow-x: auto;
@@ -57,10 +57,7 @@
     padding-bottom: 1rem;
   }
 
-  .card {
-    flex: 0 0 auto;
-    scroll-snap-align: start;''
-  }
+
   
 body {
     overflow-x: hidden;
