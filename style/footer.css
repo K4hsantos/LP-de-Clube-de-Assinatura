@@ -1,6 +1,6 @@
 #footer {
     position: relative;
-    margin-top: 10rem;
+    margin-top: 5rem;
     background: url(../assets/icons/book-trace-background.svg) no-repeat center;
     width: 100vw;
     height: 60vh;
@@ -14,13 +14,14 @@
             align-items: center; /* Alinha verticalmente */
             
             & img {
-                margin-top: 4rem;
+                margin-top: 5rem;
                 width: 13rem;
             }
           }
 
       & .separator {
         display: flex;
+        margin: 1rem auto;
         margin-top: 1rem;
         margin-bottom: 1rem;
         border: 1px solid var(--shape-stroke);
@@ -64,16 +65,70 @@
 }
   
 
-@media (width >=80em) {
-    #footer {
-        margin-top: 60rem;
-        background: url(../assets/icons/book-trace-background.svg) no-repeat;
-        width: 200vh;
-        height: 50vh;
-     
-        position: absolute;
-        left: -5rem;
-     }     
+@media (width >= 80em) {
+  #footer {
+    position: absolute;
+    margin-top: 5rem;
+    background: url(../assets/icons/book-trace-background.svg) no-repeat center;
+    width: 100vw;
+    height: 55vh;
+  
+    & footer {
+  
+        & .logo {
+            display: flex;
+            justify-content: center; /* Alinha horizontalmente */
+            align-items: center; /* Alinha verticalmente */
+            
+            & img {
+                margin-top: 5rem;
+                width: 13rem;
+            }
+          }
+
+      & .separator {
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 18.5rem;
+
+      }
+
+      & .social {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        /* transform: translateY(11rem); */
+
+
+        & a {
+            & img {
+                filter: invert(80%) saturate(18471%) hue-rotate(190deg) contrast(100%) brightness(1.5);
+              }
+        }
+      }
+
+      & ul {
+        margin-top: 2rem;
+        display: grid;
+        justify-content: center;
+        gap: .8rem;
+        text-align: center;
+
+
+        & .title {
+            font: var(--title-sm);
+            color: var(--text-body);
+            margin-bottom: 1.25rem;
+        }
+
+        & li a{
+            display: grid;
+            color: var(--blue-light);
+        }
+      }
+    }
+}
 }
 
 @media (width >= 90em) {

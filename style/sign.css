@@ -145,11 +145,11 @@
     }
 }
 
-
 @media (width >= 80em) {
     #sign {
       position: relative;
       margin-top: 25rem;
+      margin-bottom: 50rem;
   
       &::before {
         content: '';
@@ -183,7 +183,7 @@
         width: 18rem;
         height: 26rem;
         top: 95%;
-        left: 16.2%;
+        left: 16.5%;
         rotate: -10deg;
         z-index: -1;
         transition: transform 800ms ease, background-color 500ms ease-in-out;
@@ -580,3 +580,5 @@
       }
     }
   }
+
+
