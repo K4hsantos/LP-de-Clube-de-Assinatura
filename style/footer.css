@@ -140,7 +140,7 @@
 
 @media (width >= 90em) {
     #footer {
-      margin-top: 60rem;
+      margin-top: 20rem;
       background: url(../assets/icons/book-trace-background.svg) no-repeat center center;
       background-size: 100% auto; /* Aumenta a largura do background */
   
