@@ -104,6 +104,35 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            & a {
+                position: relative;
+
+                & p {
+                    position: absolute;
+                }
+                
+                &:hover::before {
+                    scale: 1;
+                  }
+            
+                &::before {
+                    content: "";
+            
+                    width: inherit;
+                    height: inherit;
+                    border-radius: inherit;
+            
+                    background: var(--pink-base);
+            
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+            
+                    scale: 0;
+                    transition: scale 500ms;
+                  }
+            }
         }
 
         & .hero-title {

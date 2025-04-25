@@ -98,14 +98,49 @@
 
       & .social {
         display: flex;
-        gap: 1.2rem;
+        gap: .5rem;
         justify-content: flex-start;
-        margin-left: 11%;
+        margin-left: 9.5%;
 
 
         & a {
+          width: 2.5rem;
+          height: 2.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          
+          border-radius: 5rem;
+          
+          position: relative;
+          
+          &:hover::before {
+            scale: 1;
+          }
+
+          &::before {
+            content: "";
+
+            width: inherit;
+            height: inherit;
+            border-radius: inherit;
+
+            background: var(--shape-stroke);
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            scale: 0;
+            transition: scale 200ms;
+          }
+
             & img {
                 filter: invert(80%) saturate(18471%) hue-rotate(190deg) contrast(100%) brightness(1.5);
+
+                &:hover {
+                  filter: brightness(0) invert(1);
+                }
               }
         }
       }
@@ -131,6 +166,11 @@
           & li a {
             display: grid;
             color: var(--blue-light);
+
+            &:hover {
+              color: var(--text-body);
+              transition: color 500ms;
+            }
           }
         }
       }  
@@ -175,9 +215,9 @@
   
         & .social {
           display: flex;
-          gap: 1.2rem;
+          gap: .5rem;
           justify-content: flex-start;
-          margin-left: 15.8%;
+          margin-left: 14.6%;
   
   
           & a {
